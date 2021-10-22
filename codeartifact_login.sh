@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -euo pipefail
+set -eux
 
 rm -f ~/.npmrc
 aws codeartifact login --tool npm --domain $DOMAIN --domain-owner $AWS_ACCOUNT --repository $ARTIFACT_REPO
